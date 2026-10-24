@@ -1,17 +1,17 @@
- from flask import Flask, jsonify
+from flask import Flask, jsonify
 import random
 
 app = Flask(__name__)
 
 f1_driver = [
     {   "id": 1, "name": "Kimi Antonelli", 
-    "team": "Mercedes"
+    "team": "Mercedes",
     "podiums": 20},
     {"id": 2, "name": "Max Verstappen",
-     "team": "Red Bull"
+     "team": "Red Bull",
      "podiums": 15},
     {"id": 3, "name": "Charles Leclerc",
-     "team": "Ferrari"
+     "team": "Ferrari",
      "podiums": 10}
 ]
 @app.route('/')
