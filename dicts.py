@@ -46,6 +46,6 @@ visitas = 0
 def show_visitas():
     global visitas
     visitas += 1
-    return visitas
+    return str(visitas)
 
 app.run(host='0.0.0', port=8084)
