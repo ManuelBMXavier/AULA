@@ -1,7 +1,9 @@
-from flask import Flask, jsonify
+from flask import Flask
 import random
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 f1_driver = [
     {   "id": 1, "name": "Kimi Antonelli", 
