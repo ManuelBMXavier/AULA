@@ -6,15 +6,24 @@ app = Flask(__name__)
 CORS(app)
 
 f1_driver = [
-    {   "id": 1, "name": "Kimi Antonelli", 
-    "team": "Mercedes",
-    "podiums": 20},
-    {"id": 2, "name": "Max Verstappen",
-     "team": "Red Bull",
-     "podiums": 15},
-    {"id": 3, "name": "Charles Leclerc",
-     "team": "Ferrari",
-     "podiums": 10}
+    {   
+        "id": 1, 
+        "name": "Kimi Antonelli", 
+        "team": "Mercedes",
+        "podiums": 20
+    },
+    {
+        "id": 2, 
+        "name": "Max Verstappen",
+        "team": "Red Bull",
+        "podiums": 15
+    },
+    {
+        "id": 3, 
+        "name": "Charles Leclerc",
+        "team": "Ferrari",
+        "podiums": 10
+    }
 ]
 @app.route('/')
 def index():
