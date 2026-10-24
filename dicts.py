@@ -43,7 +43,7 @@ def drivers_id(id):
 visitas = 0
 
 @app.route('/visitas')
-def visitas():
+def show_visitas():
     global visitas
     visitas += 1
     return visitas
