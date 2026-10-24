@@ -24,4 +24,4 @@ def piadas_id(id):
         return "Piada não encontrada", 404
     return piadas[id - 1]
 
-app.run(host='0.0.0.0', port=8080)
+app.run(host='0.0.0.0', port=8084)
