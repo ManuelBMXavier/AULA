@@ -41,4 +41,11 @@ def drivers_id(id):
     return "Driver not found", 404
 
 app.run(host='0.0.0', port=8084)
-     
+
+visitas = 0
+
+@app.route('/visitas')
+def visitas():
+    global visitas
+    visitas += 1
+    return visitas
