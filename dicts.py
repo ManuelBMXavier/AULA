@@ -18,7 +18,7 @@ f1_driver = [
 def index():
     return "Hello, World!"
 
-@app.route('/drivers')
+@app.route('/driver')
 def drivers():
     return jsonify(random.choice(f1_driver))
 
